@@ -1,0 +1,2 @@
+.typing-effect__typewriter__typing_step span,.typing-effect__typewriter span{overflow:hidden;margin:0;padding:0}@-webkit-keyframes typing{0%{width:0}to{width:100%}}@keyframes typing{0%{width:0}to{width:100%}}@-webkit-keyframes blink{50%{border-color:transparent}}@keyframes blink{50%{border-color:transparent}}@-webkit-keyframes stop-blink{0%,to{border-right:transparent}}@keyframes stop-blink{0%,to{border-right:transparent}}
+/*# sourceMappingURL=2.19f2ac71.chunk.css.map */
