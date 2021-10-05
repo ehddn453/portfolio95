@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio95/static/css/main.306bb54e.chunk.css",
-    "main.js": "/portfolio95/static/js/main.64ae3b8b.chunk.js",
-    "main.js.map": "/portfolio95/static/js/main.64ae3b8b.chunk.js.map",
+    "main.css": "/portfolio95/static/css/main.824612b8.chunk.css",
+    "main.js": "/portfolio95/static/js/main.08c53adf.chunk.js",
+    "main.js.map": "/portfolio95/static/js/main.08c53adf.chunk.js.map",
     "runtime-main.js": "/portfolio95/static/js/runtime-main.c40df108.js",
     "runtime-main.js.map": "/portfolio95/static/js/runtime-main.c40df108.js.map",
     "static/css/2.19f2ac71.chunk.css": "/portfolio95/static/css/2.19f2ac71.chunk.css",
-    "static/js/2.f3433504.chunk.js": "/portfolio95/static/js/2.f3433504.chunk.js",
-    "static/js/2.f3433504.chunk.js.map": "/portfolio95/static/js/2.f3433504.chunk.js.map",
+    "static/js/2.d4ee0aa6.chunk.js": "/portfolio95/static/js/2.d4ee0aa6.chunk.js",
+    "static/js/2.d4ee0aa6.chunk.js.map": "/portfolio95/static/js/2.d4ee0aa6.chunk.js.map",
     "static/js/3.91267c7b.chunk.js": "/portfolio95/static/js/3.91267c7b.chunk.js",
     "static/js/3.91267c7b.chunk.js.map": "/portfolio95/static/js/3.91267c7b.chunk.js.map",
     "index.html": "/portfolio95/index.html",
     "static/css/2.19f2ac71.chunk.css.map": "/portfolio95/static/css/2.19f2ac71.chunk.css.map",
-    "static/css/main.306bb54e.chunk.css.map": "/portfolio95/static/css/main.306bb54e.chunk.css.map",
-    "static/js/2.f3433504.chunk.js.LICENSE.txt": "/portfolio95/static/js/2.f3433504.chunk.js.LICENSE.txt",
+    "static/css/main.824612b8.chunk.css.map": "/portfolio95/static/css/main.824612b8.chunk.css.map",
+    "static/js/2.d4ee0aa6.chunk.js.LICENSE.txt": "/portfolio95/static/js/2.d4ee0aa6.chunk.js.LICENSE.txt",
     "static/media/contact-circle.a201958f.png": "/portfolio95/static/media/contact-circle.a201958f.png",
     "static/media/contest1(yellow).75ae6d12.jpg": "/portfolio95/static/media/contest1(yellow).75ae6d12.jpg",
     "static/media/food1(color).4da29271.jpg": "/portfolio95/static/media/food1(color).4da29271.jpg",
@@ -37,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.c40df108.js",
     "static/css/2.19f2ac71.chunk.css",
-    "static/js/2.f3433504.chunk.js",
-    "static/css/main.306bb54e.chunk.css",
-    "static/js/main.64ae3b8b.chunk.js"
+    "static/js/2.d4ee0aa6.chunk.js",
+    "static/css/main.824612b8.chunk.css",
+    "static/js/main.08c53adf.chunk.js"
   ]
 }
