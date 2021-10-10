@@ -1,0 +1,910 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Gothic+A1&family=Hahmlet&family=Oswald&family=Recursive&family=STIX+Two+Text&display=swap');
+@import '_mixin.scss';
+@import '_common.scss';
+
+
+@media(min-width:360px) and (max-width:767px){
+    
+
+    //main1 start-----------------------------------------------------
+    .main1_start_bg{
+        background: url('../image/img_main_kv.jpg') no-repeat center center;
+        background-attachment: scroll !important;
+        background-size: cover;
+        transform: scale(0.6);
+        transition: 1s;
+        width: 100%;
+
+        .main1_start{
+            width: 100%; height: 90vh;
+            padding-top: 20%;
+            transform-origin: top;
+            p{
+                color: #fff; 
+                text-align: center;
+                overflow: hidden;
+                span{
+                    display: block;
+                    transition: 1.2s;
+                }
+            }
+            //제일 위 SOUND
+            P:nth-of-type(1){
+                span{
+                    font-style: italic;
+                    font-family: 'Hahmlet', serif;
+                    font-size: 4rem;
+                }
+            }
+            //OF
+            p:nth-of-type(3){
+                span{
+                    em{
+                        font-size: 4rem;
+                        font-family: 'Hahmlet', serif;
+                    }
+                }
+            }
+            //THE, FUTURE
+            P:nth-of-type(3),P:nth-of-type(5){
+                span{
+                    font-family: 'Atkinson Hyperlegible', sans-serif;
+                    font-size: 5rem;
+                }
+            }
+            //짝수 번째(한글)
+            p:nth-of-type(even){
+                margin: 13% 0;
+                span{
+                    font-family: 'Gothic A1', sans-serif;
+                    font-size: 0.8rem;
+                }
+            }
+            //transform
+            P:nth-of-type(1){
+                span{
+                    transform: translateY(100%);
+                }
+            }
+            P:nth-of-type(2){
+                span{
+                transform: translateY(130%);
+                }
+            }
+            P:nth-of-type(3){
+                span{
+                    transform: translateY(300%);
+                }
+            }
+            P:nth-of-type(4){
+                span{
+                    transform: translateY(190%);
+                }
+            }
+            P:nth-of-type(5){
+                span{
+                    transform: translateY(500%);
+                }
+            }
+        }
+        &.active{
+            .main1_start{
+                //transform
+                P:nth-of-type(1){
+                    span{
+                        transform: translateY(0);
+                    }
+                }
+                P:nth-of-type(2){
+                    span{
+                        transform: translateY(0);
+                    }
+                }
+                P:nth-of-type(3){
+                    span{
+                        transform: translateY(0);
+                    }
+                }
+                P:nth-of-type(4){
+                    span{
+                        transform: translateY(0);
+                    }
+                }
+                P:nth-of-type(5){
+                    span{
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+        &.opacity{
+            .main1_start{
+                p{
+                    opacity: 0;
+                    transition: 1s;
+                }
+            }
+        }
+        &.scale{
+            transform: scale(1);
+        }
+        &.remove{
+            display: none;
+        }
+    }
+
+    //main1---------------------------------------
+    .main1{
+        display: none;
+    }
+    .main1.active{
+        width: 100%; height: 200vh;
+        display: block;
+        .main1_back{
+            width: 100%; height: 100%;
+            background: url('../image/img_main_kv.jpg') center center no-repeat;
+            background-attachment: scroll !important;
+            background-size: cover;
+            .main1_text1{
+                width: 100%; height: 90vh;
+                padding-top: 20%;
+                transform-origin: top;
+                transition: .7s;
+                p{
+                    color: #fff; 
+                    text-align: center;
+                    overflow: hidden;
+                    span{
+                        display: block;
+                        transition: 1.2s;
+                    }
+                }
+                //제일 위 SOUND
+                P:nth-of-type(1){
+                    span{
+                        font-style: italic;
+                        font-family: 'Hahmlet', serif;
+                        font-size: 4rem;
+                    }
+                }
+                //OF
+                p:nth-of-type(3){
+                    span{
+                        em{
+                            font-size: 4rem;
+                            font-family: 'Hahmlet', serif;
+                        }
+                    }
+                }
+                //THE, FUTURE
+                P:nth-of-type(3),P:nth-of-type(5){
+                    span{
+                        font-family: 'Atkinson Hyperlegible', sans-serif;
+                        font-size: 5rem;
+                    }
+                }
+                //짝수 번째(한글)
+                p:nth-of-type(even){
+                    margin: 13% 0;
+                    span{
+                        font-family: 'Gothic A1', sans-serif;
+                        font-size: 0.8rem;
+                    }
+                }
+                //transform
+                P:nth-of-type(1){
+                    span{
+                        transform: translateY(100%);
+                    }
+                }
+                P:nth-of-type(2){
+                    span{
+                    transform: translateY(130%);
+                    }
+                }
+                P:nth-of-type(3){
+                    span{
+                        transform: translateY(300%);
+                    }
+                }
+                P:nth-of-type(4){
+                    span{
+                        transform: translateY(190%);
+                    }
+                }
+                P:nth-of-type(5){
+                    span{
+                        transform: translateY(500%);
+                    }
+                }
+            }
+            .main1_text2{
+                width: 100%; height: 100vh;
+                p{
+                    color: #fff;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    line-height: 2.5rem;
+                    padding: 0 5%;
+                }
+            }
+            &.active{
+                .main1_text1{
+                    //transform
+                    P:nth-of-type(1){
+                        span{
+                            transform: translateY(0);
+                        }
+                    }
+                    P:nth-of-type(2){
+                        span{
+                            transform: translateY(0);
+                        }
+                    }
+                    P:nth-of-type(3){
+                        span{
+                            transform: translateY(0);
+                        }
+                    }
+                    P:nth-of-type(4){
+                        span{
+                            transform: translateY(0);
+                        }
+                    }
+                    P:nth-of-type(5){
+                        span{
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //main2-----------------------------------------------------
+    .main2{
+        transition: 1s;
+        overflow: hidden;
+        .main2_fixed{ //scroll 내렸을 때 fixed가 되야됨!!!
+            &.fixed{
+                position: fixed;
+                top: 0; left: 0;
+                .main2_text{
+                    width: 90%;
+                    margin: 7% auto 3%;
+                    p{
+                        span{
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+            &.under{
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            transition: 1s;
+            transform: translateX(0);
+            width: 100vw; height: 100vh;
+            .main2_title{
+                margin: 40% 5% 15%;
+                li{
+                    font-size: 4.5rem;
+                    font-family: 'Atkinson Hyperlegible', sans-serif;
+                    font-weight: bold;
+                    letter-spacing: 4px;
+                    line-height: 100%;
+                }
+                li:nth-of-type(1){transform: translate(10%,0);}
+                li:nth-of-type(2){transform: translate(0);}
+                li:nth-of-type(3){transform: translate(10%,0);}
+                
+            }
+            h3{
+                @include textH3();
+
+            }
+            .main2_text{
+                width: 90%;
+                margin: 7% auto 3%;
+                p{
+                    margin: 2% 0;
+                    overflow: hidden;
+                    span{
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        display: block;
+                        transform: translateY(100%);
+                        transition: .7s;
+                    }
+                }
+            }
+            .more{
+                width: 90%;
+                margin: 0 auto 10%;
+                a{
+                    @include textBtn();
+                }
+            }
+        }
+        .main2_rel{
+            .main2_imgAll{
+                li{
+                    width: 100%; height: 200vh;
+                    position: relative;
+                    figure{
+                        overflow: hidden;
+                        img{width: 100%;}
+                    }
+                }
+                li:nth-of-type(1){
+                    figure{
+                        width: 70%;
+                        position: absolute;
+                        left: calc(50% - 35%); bottom: 10%;
+                        span{
+                            padding-top: 3%;
+                            font-size: 0.6rem;
+                            float: right;
+                        }
+                    }
+                    //스크롤 시 배경색이 위로 빠져야됨
+                    figure::before{
+                        content: '';
+                        display: block;
+                        width: 100%; height: 100%;
+                        background-color: #f0e4ed;
+                        position: absolute;
+                        left: 0; top: 0;
+                        transition: .6s;
+                    }
+                }
+                //class active 들어갔을 때
+                li:nth-of-type(1).active{
+                    figure::before{
+                        transform: translateY(-105%);
+                    }
+                }
+                li:nth-of-type(2){
+                    figure{
+                        width: 60%;
+                        position: absolute;
+                        right: 5%; top: 20%;
+                    }
+                    //스크롤 시 배경색이 위로 빠져야됨
+                    figure::before{
+                        content: '';
+                        display: block;
+                        width: 100%; height: 100%;
+                        background-color: #f0e4ed;
+                        position: absolute;
+                        left: 0; top: 0;
+                        transition: .6s;
+                    }
+                }
+                //class active 들어갔을 때
+                li:nth-of-type(2).active{
+                    figure::before{
+                        transform: translateY(-105%);
+                    }
+                }
+            }
+        }
+    }
+
+    //main3-------------------------------------------------------
+    .main3{
+        transition: 1s;
+        padding-top: 50%;
+        &.bgColor{
+            background-color: #000;
+        }
+        //forest------------------------
+        .forest{
+            color: #fff;
+            h3{
+                width: 90%;
+                margin: 5% auto;
+                font-size: 1.8rem;
+                font-family: 'Hahmlet', serif;
+                font-weight: normal;
+            }
+            .main3_text{
+                width: 90%;
+                margin: 0 auto;
+                p{
+                    overflow: hidden;
+                    span{
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        line-height: 1.8rem;
+                        letter-spacing: 1px;
+                        display: block;
+                        transform: translateY(100%);
+                        transition: 1s;
+                    }
+                }
+                &.active{
+                    p{
+                        span{transform: translateY(0);}
+                    }
+                }
+            }
+            .main3_more{
+                width: 90%;
+                margin: 2% auto 13%;
+                a{
+                    display: inline-block;
+                    width: 18%;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    padding: 1.5% 1%;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    color: #000;
+                    border: 2px solid #fff;
+                    background-color: #fff;
+                    border-radius: 20px;
+                }
+            }
+            figure{
+                width: 85%;
+                position: relative;
+                overflow: hidden;
+                img{width: 100%;}
+                span{
+                    display: inline-block;
+                    transform: rotate(-90deg);
+                    font-size: 0.6rem;
+                    position: absolute;
+                    right: -19%; bottom: 9%;
+                }
+            }
+//사진 위에 배경 색-----------------    
+            figure::before{
+                display: block;
+                content: '';
+                width: 100%; height: 100%;
+                background-color: #f0e4ed;
+                position: absolute;
+                left: 0; top: 0;
+                transition: .6s;
+            }
+            figure.active{
+                &::before{
+                    transform: translateY(-105%);
+                }
+            }
+            .forest_title{
+                width: 90%;
+                margin: 10% auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                p{
+                    line-height: 4rem;
+                    overflow: hidden;
+                    span{
+                        display: block;
+                        transform: translateY(110%);
+                        transition: 1s;
+                        opacity: 0;
+                    }
+                }
+                &.active{
+                    p{
+                        span{
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+                p:nth-of-type(1){
+                    span{
+                        font-family: 'Hahmlet', serif;
+                        letter-spacing: -2px;
+                        font-size: 4.5rem;
+                    }
+                }
+                p:nth-of-type(2){
+                    margin-bottom: 20%;
+                    span{
+                        font-family: 'Atkinson Hyperlegible', sans-serif;
+                        font-size: 5rem;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+        //garden-------------------------
+        .garden{
+            color: #fff;
+            figure{
+                width: 85%; height: 80vh;
+                float: right;
+                position: relative;
+                overflow: hidden;
+                img{width: 100%; height: 100%;}
+                span{
+                    position: absolute;
+                    left: -18%; top: 8%;
+                    display: inline-block;
+                    transform: rotate(-90deg);
+                    font-size: 0.6rem;
+                }
+            }
+//사진 위에 배경 색-----------------    
+            figure::before{
+                display: block;
+                content: '';
+                width: 100%; height: 100%;
+                background-color: #f0e4ed;
+                position: absolute;
+                left: 0; top: 0;
+                transition: .6s;
+            }
+            figure.active{
+                &::before{
+                    transform: translateY(-105%);
+                }
+            }
+            figure::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .garden_title{
+                width: 90%;
+                margin: 10% auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                p{
+                    overflow: hidden;
+                    line-height: 4rem;
+                    span{
+                        display: block;
+                        transition: 1s;
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                }
+                &.active{
+                    p{
+                        span{
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+                p:nth-of-type(1){
+                    margin-top: 10%;
+                    span{
+                        font-family: 'Hahmlet', serif;
+                        letter-spacing: -2px;
+                        font-size: 4.5rem;
+                    }
+                }
+                p:nth-of-type(2){
+                    margin-bottom: 20%;
+                    span{
+                        font-family: 'Atkinson Hyperlegible', sans-serif;
+                        font-size: 4.5rem;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+        //space------------------------
+        .space{
+            color: #fff;
+            text-align: center;
+            width: 100%; height: 85vh;
+            background: url('../image/main3/img_main_forest_03.jpg') no-repeat center;
+            background-size: cover;
+            .space_text{
+                padding: 45% 0;
+                &.active{
+                    li{
+                        span{
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                }
+                li{
+                    line-height: 1.7rem;
+                    overflow: hidden;
+                    span{
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        font-size: 1.1rem;
+                        display: block;
+                        transform: translateY(100%);
+                        transition: 1s;
+                    }
+                }
+            }
+            .space_title{
+                h3{
+                    font-size: 1.7rem;
+                    font-family: 'Hahmlet', serif;
+                    font-weight: normal;
+                    padding-bottom: 5%;
+                }
+            }
+        }
+    }
+
+    //main4-----------------------------------------------------
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        margin: 5%;
+        img{width: 100%}
+    }
+
+    .swiper-slide:nth-child(1) {
+        width: 60%;
+        position: relative;
+        span{
+            display: block;
+            position: absolute;
+            left: 0; bottom: -12%;
+            font-size: 0.8rem;
+        }
+    }
+    .swiper-slide:nth-child(2) {
+        width: 60%;
+        position: relative;
+        margin-top: 40%;
+        span{
+            display: block;
+            position: absolute;
+            left: 0; bottom: -15%;
+            font-size: 0.8rem;
+        }
+    }
+    .swiper-slide:nth-child(3) {
+        width: 60%;
+        position: relative;
+        margin-top: 10%;
+        span{
+            display: block;
+            position: absolute;
+            left: 0; bottom: -7%;
+            font-size: 0.8rem;
+        }
+    }
+
+
+    .main4{
+        .main4_textAll{
+            margin-top: 40%;
+            h3{
+                @include textH3();
+            }
+            .main4_text{
+                width: 90%;
+                margin: 7% auto 3%;
+                &.active{
+                    p{
+                        span{transform: translateY(0);}
+                    }
+                }
+                p{
+                    margin: 2% 0;
+                    overflow: hidden;
+                    span{
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        display: block;
+                        transform: translateY(100%);
+                        transition: 1s;
+                    }
+                }
+            }
+            .main4_more{
+                width: 90%;
+                margin: 0 auto 10%;
+                a{
+                    @include textBtn();
+                }
+            }
+        }
+        //slide-----------------------------------
+        // .main4_flex{
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     .flex_img1{
+        //         figure{
+        //             img{width: 100%;}
+        //             span{}
+        //         }
+        //     }
+        //     .flex_img2{
+        //         figure{
+        //             img{width: 100%;}
+        //             span{}
+        //         }
+        //     }
+        //     .flex_img3{
+        //         figure{
+        //             img{width: 100%;}
+        //             span{}
+        //         }
+        //     }
+        // }
+    }
+
+    //main5------------------------------------------------------
+    .main5{
+        .main5_textAll{
+            margin-top: 40%;
+            h3{
+                @include textH3();
+            }
+            .main5_text{
+                width: 90%;
+                margin: 7% auto 3%;
+                &.active{
+                    p{
+                        span{transform: translateY(0);}
+                    }
+                }
+                p{
+                    margin: 2% 0;
+                    overflow: hidden;
+                    span{
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        display: inline-block;
+                        transform: translateY(100%);
+                        transition: 1s;
+                    }
+                }
+            }
+            .main5_more{
+                width: 90%;
+                margin: 0 auto 10%;
+                a{
+                    @include textBtn();
+                }
+            }
+        }
+        figure{
+            position: relative;
+            overflow: hidden;
+            img{width: 100%;}
+            &.active::before{
+                transform: translateY(-100%);
+            }
+        }
+        figure::before{
+            width: 100%; height: 100%;
+            content: '';
+            display: block;
+            background-color: #f0e4ed;
+            position: absolute;
+            left: 0; right: 0;
+            transition: 1s;
+        }
+        .main5_con{
+            width: 90%;
+            margin: 5% auto;
+            li{
+                h3{
+                    padding: 5% 0;
+                    font-size: 1.1rem;
+                }
+                .con_text{
+                    p{
+                        span{
+                            font-size: 0.9rem;
+                            line-height: 1.7rem;
+                        }
+                    }
+                }
+            }
+            li:nth-of-type(2)::before{
+                content: '';
+                display: block;
+                width: 100%; height: 1px;
+                background-color: #000;
+                margin: 5% 0;
+            }
+        }
+    }
+
+    //main6------------------------------------------------------
+    .main6{
+        .main6_con{
+            position: relative;
+            figure{
+                padding: 35% 0;
+                width: 60%;
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+                img{width: 100%;}
+                &.active::before{
+                    transform: translateY(-105%);
+                }
+            }
+            figure::before{
+                content: '';
+                display: block;
+                width: 100%; height: 100%;
+                background-color: #f0e4ed;
+                position: absolute;
+                left: 0; top: 0;
+                transition: 1s;
+            }
+            p{
+                position: absolute;
+                left: calc(50% - 40%); top: 40%;
+                overflow: hidden;
+                &.active{
+                    span{transform: translateY(0);}
+                }
+                span{
+                    display: inline-block;
+                    transform: translateY(100%);
+                    transition: 1s;
+                }
+                span:nth-of-type(1){
+                    font-size: 3rem;
+                    font-family: 'Hahmlet', serif;
+                }
+                span:nth-of-type(2){
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+            }
+            p::after{
+                content: '';
+                display: block;
+                width: 100%; height: 2px;
+                background-color: #000;
+            }
+        }
+    }
+
+    
+}

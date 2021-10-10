@@ -1,0 +1,19 @@
+@mixin textH3{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    font-family: 'Hahmlet', serif;
+    font-weight: normal;
+}
+@mixin textBtn{
+    display: inline-block;
+    width: 18%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1.5% 1%;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
